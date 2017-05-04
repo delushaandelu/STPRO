@@ -1,0 +1,10 @@
+H:\STPRO\main\main\bin\Debug\main.exe.config
+H:\STPRO\main\main\bin\Debug\main.exe
+H:\STPRO\main\main\bin\Debug\main.pdb
+H:\STPRO\main\main\bin\Debug\MetroFramework.dll
+H:\STPRO\main\main\bin\Debug\MetroFramework.Fonts.dll
+H:\STPRO\main\main\obj\Debug\main.csprojResolveAssemblyReference.cache
+H:\STPRO\main\main\obj\Debug\main.Properties.Resources.resources
+H:\STPRO\main\main\obj\Debug\main.csproj.GenerateResource.Cache
+H:\STPRO\main\main\obj\Debug\main.exe
+H:\STPRO\main\main\obj\Debug\main.pdb
