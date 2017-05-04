@@ -8,3 +8,5 @@ H:\STPRO\main\main\obj\Debug\main.Properties.Resources.resources
 H:\STPRO\main\main\obj\Debug\main.csproj.GenerateResource.Cache
 H:\STPRO\main\main\obj\Debug\main.exe
 H:\STPRO\main\main\obj\Debug\main.pdb
+H:\STPRO\main\main\obj\Debug\main.Students.resources
+H:\STPRO\main\main\obj\Debug\main.frmAddEditStudent.resources

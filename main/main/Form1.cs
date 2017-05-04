@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace main
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class Students : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public Students()
         {
             InitializeComponent();
+        }
+
+        private void mtAdd_Click(object sender, EventArgs e)
+        {
+            using (frmAddEditStudent frm = new frmAddEditStudent()) 
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }
