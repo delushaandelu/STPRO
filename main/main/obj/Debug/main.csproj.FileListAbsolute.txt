@@ -10,3 +10,9 @@ H:\STPRO\main\main\obj\Debug\main.exe
 H:\STPRO\main\main\obj\Debug\main.pdb
 H:\STPRO\main\main\obj\Debug\main.Students.resources
 H:\STPRO\main\main\obj\Debug\main.frmAddEditStudent.resources
+H:\STPRO\main\main\bin\Debug\std.mdf
+H:\STPRO\main\main\bin\Debug\std_log.ldf
+H:\STPRO\main\main\bin\Debug\EntityFramework.dll
+H:\STPRO\main\main\bin\Debug\EntityFramework.SqlServer.dll
+H:\STPRO\main\main\bin\Debug\EntityFramework.xml
+H:\STPRO\main\main\bin\Debug\EntityFramework.SqlServer.xml

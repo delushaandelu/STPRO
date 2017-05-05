@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.txtStudentID = new MetroFramework.Controls.MetroTextBox();
             this.txtFirstName = new MetroFramework.Controls.MetroTextBox();
@@ -51,6 +52,30 @@
             this.btnSave = new MetroFramework.Controls.MetroButton();
             this.txtDonation = new MetroFramework.Controls.MetroTextBox();
             this.init = new MetroFramework.Controls.MetroLabel();
+            this.bindingSourceStdPro = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource9 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource10 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStdPro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource10)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -65,6 +90,7 @@
             // 
             // txtStudentID
             // 
+            this.txtStudentID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "StudentId", true));
             this.txtStudentID.Location = new System.Drawing.Point(168, 75);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.ReadOnly = true;
@@ -73,6 +99,7 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource1, "FirstName", true));
             this.txtFirstName.Location = new System.Drawing.Point(168, 117);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(191, 23);
@@ -89,6 +116,7 @@
             // 
             // txtLastName
             // 
+            this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource2, "LastName", true));
             this.txtLastName.Location = new System.Drawing.Point(168, 159);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(191, 23);
@@ -105,6 +133,7 @@
             // 
             // txtDob
             // 
+            this.txtDob.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource3, "Dob", true));
             this.txtDob.Location = new System.Drawing.Point(168, 205);
             this.txtDob.Name = "txtDob";
             this.txtDob.Size = new System.Drawing.Size(191, 23);
@@ -139,6 +168,7 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource6, "Address", true));
             this.txtAddress.Location = new System.Drawing.Point(536, 75);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -156,6 +186,7 @@
             // 
             // txtTell
             // 
+            this.txtTell.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource8, "Tel", true));
             this.txtTell.Location = new System.Drawing.Point(536, 191);
             this.txtTell.Name = "txtTell";
             this.txtTell.Size = new System.Drawing.Size(191, 23);
@@ -172,6 +203,7 @@
             // 
             // txtStand
             // 
+            this.txtStand.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource9, "Stand", true));
             this.txtStand.Location = new System.Drawing.Point(536, 237);
             this.txtStand.Name = "txtStand";
             this.txtStand.Size = new System.Drawing.Size(191, 23);
@@ -188,6 +220,7 @@
             // 
             // txtClass
             // 
+            this.txtClass.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource10, "Class", true));
             this.txtClass.Location = new System.Drawing.Point(536, 283);
             this.txtClass.Name = "txtClass";
             this.txtClass.Size = new System.Drawing.Size(191, 23);
@@ -205,15 +238,18 @@
             // chkGender
             // 
             this.chkGender.AutoSize = true;
+            this.chkGender.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.studentBindingSource4, "Gender", true));
             this.chkGender.Location = new System.Drawing.Point(168, 256);
             this.chkGender.Name = "chkGender";
             this.chkGender.Size = new System.Drawing.Size(28, 15);
             this.chkGender.TabIndex = 20;
             this.chkGender.Text = "?";
             this.chkGender.UseVisualStyleBackColor = true;
+            this.chkGender.CheckStateChanged += new System.EventHandler(this.chkGender_CheckStateChanged);
             // 
             // cboCity
             // 
+            this.cboCity.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.studentBindingSource7, "City", true));
             this.cboCity.FormattingEnabled = true;
             this.cboCity.ItemHeight = 23;
             this.cboCity.Location = new System.Drawing.Point(536, 151);
@@ -228,9 +264,11 @@
             this.btnSave.Size = new System.Drawing.Size(83, 32);
             this.btnSave.TabIndex = 22;
             this.btnSave.Text = "&Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtDonation
             // 
+            this.txtDonation.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource5, "Donate", true));
             this.txtDonation.Location = new System.Drawing.Point(168, 285);
             this.txtDonation.Name = "txtDonation";
             this.txtDonation.Size = new System.Drawing.Size(191, 23);
@@ -247,8 +285,57 @@
             this.init.Text = "Init Donation";
             this.init.Click += new System.EventHandler(this.metroLabel11_Click);
             // 
+            // bindingSourceStdPro
+            // 
+            this.bindingSourceStdPro.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource
+            // 
+            this.studentBindingSource.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource1
+            // 
+            this.studentBindingSource1.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource2
+            // 
+            this.studentBindingSource2.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource3
+            // 
+            this.studentBindingSource3.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource4
+            // 
+            this.studentBindingSource4.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource5
+            // 
+            this.studentBindingSource5.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource6
+            // 
+            this.studentBindingSource6.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource7
+            // 
+            this.studentBindingSource7.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource8
+            // 
+            this.studentBindingSource8.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource9
+            // 
+            this.studentBindingSource9.DataSource = typeof(main.Student);
+            // 
+            // studentBindingSource10
+            // 
+            this.studentBindingSource10.DataSource = typeof(main.Student);
+            // 
             // frmAddEditStudent
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 387);
@@ -280,6 +367,19 @@
             this.Name = "frmAddEditStudent";
             this.Resizable = false;
             this.Text = "Student Information";
+            this.Load += new System.EventHandler(this.frmAddEditStudent_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStdPro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +410,17 @@
         private MetroFramework.Controls.MetroButton btnSave;
         private MetroFramework.Controls.MetroTextBox txtDonation;
         private MetroFramework.Controls.MetroLabel init;
+        private System.Windows.Forms.BindingSource studentBindingSource;
+        private System.Windows.Forms.BindingSource studentBindingSource1;
+        private System.Windows.Forms.BindingSource studentBindingSource2;
+        private System.Windows.Forms.BindingSource studentBindingSource3;
+        private System.Windows.Forms.BindingSource studentBindingSource6;
+        private System.Windows.Forms.BindingSource studentBindingSource8;
+        private System.Windows.Forms.BindingSource studentBindingSource9;
+        private System.Windows.Forms.BindingSource studentBindingSource10;
+        private System.Windows.Forms.BindingSource studentBindingSource4;
+        private System.Windows.Forms.BindingSource studentBindingSource7;
+        private System.Windows.Forms.BindingSource studentBindingSource5;
+        private System.Windows.Forms.BindingSource bindingSourceStdPro;
     }
 }
