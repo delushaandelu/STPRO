@@ -152,6 +152,9 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\City.datasource" />
+    <None Include="Properties\DataSources\Student.datasource" />
+    <None Include="Properties\DataSources\Students.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

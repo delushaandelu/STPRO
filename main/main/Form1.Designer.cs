@@ -35,8 +35,7 @@
             this.mtEdit = new MetroFramework.Controls.MetroTile();
             this.mtAdd = new MetroFramework.Controls.MetroTile();
             this.mtRefresh = new MetroFramework.Controls.MetroTile();
-            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.City = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.studentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,12 +44,13 @@
             this.donateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.City = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.standDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.classDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -89,6 +89,7 @@
             this.mtSave.TileImage = global::main.Properties.Resources.save_as;
             this.mtSave.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mtSave.UseTileImage = true;
+            this.mtSave.Click += new System.EventHandler(this.mtSave_Click);
             // 
             // mtDelete
             // 
@@ -100,6 +101,7 @@
             this.mtDelete.TileImage = global::main.Properties.Resources.delete;
             this.mtDelete.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mtDelete.UseTileImage = true;
+            this.mtDelete.Click += new System.EventHandler(this.mtDelete_Click);
             // 
             // mtEdit
             // 
@@ -111,6 +113,7 @@
             this.mtEdit.TileImage = global::main.Properties.Resources.upgrade_downgrade_account;
             this.mtEdit.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mtEdit.UseTileImage = true;
+            this.mtEdit.Click += new System.EventHandler(this.mtEdit_Click);
             // 
             // mtAdd
             // 
@@ -136,13 +139,16 @@
             this.mtRefresh.UseTileImage = true;
             this.mtRefresh.Click += new System.EventHandler(this.mtRefresh_Click);
             // 
-            // studentBindingSource
+            // City
             // 
-            this.studentBindingSource.DataSource = typeof(main.Student);
-            // 
-            // cityBindingSource
-            // 
-            this.cityBindingSource.DataSource = typeof(main.City);
+            this.City.DataPropertyName = "City";
+            this.City.DataSource = this.cityBindingSource;
+            this.City.DisplayMember = "CityName";
+            this.City.HeaderText = "City";
+            this.City.Name = "City";
+            this.City.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.City.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.City.ValueMember = "CityId";
             // 
             // studentIdDataGridViewTextBoxColumn
             // 
@@ -192,16 +198,9 @@
             this.telDataGridViewTextBoxColumn.HeaderText = "Tel";
             this.telDataGridViewTextBoxColumn.Name = "telDataGridViewTextBoxColumn";
             // 
-            // City
+            // cityBindingSource
             // 
-            this.City.DataPropertyName = "City";
-            this.City.DataSource = this.cityBindingSource;
-            this.City.DisplayMember = "CityName";
-            this.City.HeaderText = "City";
-            this.City.Name = "City";
-            this.City.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.City.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.City.ValueMember = "CityId";
+            this.cityBindingSource.DataSource = typeof(main.City);
             // 
             // standDataGridViewTextBoxColumn
             // 
@@ -214,6 +213,10 @@
             this.classDataGridViewTextBoxColumn.DataPropertyName = "Class";
             this.classDataGridViewTextBoxColumn.HeaderText = "Class";
             this.classDataGridViewTextBoxColumn.Name = "classDataGridViewTextBoxColumn";
+            // 
+            // studentBindingSource
+            // 
+            this.studentBindingSource.DataSource = typeof(main.Student);
             // 
             // Students
             // 
@@ -230,8 +233,8 @@
             this.Text = "Students";
             this.Load += new System.EventHandler(this.Students_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
